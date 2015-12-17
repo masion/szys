@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#add8e6" >
+
+    <Button
+        android:id="@+id/xuanzhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tiankong"
+        android:layout_centerVertical="true"
+        android:background="@drawable/buttonbg"
+        android:text="选择题" />
+
+    <Button
+        android:id="@+id/jishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/xuanzhe"
+        android:layout_below="@+id/xuanzhe"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/buttonbg"
+        android:text="计时练习" />
+
+    <Button
+        android:id="@+id/tiankong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/xuanzhe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonbg"
+        android:text="填空题" />
+
+</RelativeLayout>

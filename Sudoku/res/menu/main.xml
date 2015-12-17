@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/newgame"
+        android:title="@string/game_op">
+    </item>
+    <item
+        android:id="@+id/help"
+        android:title="@string/game_help">
+    </item>
+    <item
+        android:id="@+id/about"
+        android:title="@string/game_about">
+    </item>
+    <item
+        android:id="@+id/item1"
+        android:title="时钟">
+    </item>
+
+</menu>

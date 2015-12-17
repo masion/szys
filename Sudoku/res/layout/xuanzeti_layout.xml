@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background" >
+
+    <TextView
+        android:id="@+id/textViewtimulabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:text="题目："
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewtimu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewtimulabel"
+        android:layout_alignBottom="@+id/textViewtimulabel"
+        android:layout_toRightOf="@+id/textViewtimulabel"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewtimu"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bgfocus"
+        android:text="A" />
+
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_alignBaseline="@+id/buttonA"
+        android:layout_alignBottom="@+id/buttonA"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/buttonA"
+        android:background="@drawable/bgfocus"
+        android:text="B" />
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/buttonA"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/buttonB"
+        android:background="@drawable/bgfocus"
+        android:text="C" />
+
+    <Button
+        android:id="@+id/buttonD"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_alignBaseline="@+id/buttonC"
+        android:layout_alignBottom="@+id/buttonC"
+        android:layout_alignLeft="@+id/buttonB"
+        android:background="@drawable/bgfocus"
+        android:text="D" />
+
+    <TextView
+        android:id="@+id/textViewtiplabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonC"
+        android:layout_marginTop="39dp"
+        android:text="提示："
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewtip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewtiplabel"
+        android:layout_alignBottom="@+id/textViewtiplabel"
+        android:layout_alignLeft="@+id/textViewtimu"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/buttonnext"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/textViewtip"
+        android:layout_marginTop="19dp"
+        android:layout_toLeftOf="@+id/buttonB"
+        android:background="@drawable/bgfocus"
+        android:text="下一题" />
+
+    <Button
+        android:id="@+id/buttonfinishe"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_alignBaseline="@+id/buttonnext"
+        android:layout_alignBottom="@+id/buttonnext"
+        android:layout_alignLeft="@+id/buttonD"
+        android:background="@drawable/bgfocus"
+        android:text="完成答题" />
+
+</RelativeLayout>
